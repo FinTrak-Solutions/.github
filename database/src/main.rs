@@ -17,7 +17,7 @@ use std::path::PathBuf;
 struct Person {
     id: i32,
     name: String,
-    data: Option<Vec<u8>>,
+    data: i32,
 }
 
 #[derive(Debug)]
@@ -97,26 +97,19 @@ impl Database {
                 if let Ok(lines) = read_lines(table_data_file) {
                     // Consumes the iterator, returns an (Optional) String
                     for line in lines.flatten() {
-                        let row: &str = rem_first_and_last(line.as_str());
-                        println!("Looking at row: {}", row);
+                        let mut row: String = rem_first_and_last(line.as_str()).to_owned();
+                        row.push_str(",");
                         let parts = row.split("),");
                         // information about this row
                         let mut cols: Vec<&str> = Vec::new();
                         let mut vals: Vec<&str> = Vec::new();
                         for part in parts {
-                            println!("\trow_part: {}", part);
                             let _ = match valid_row.captures(part) {
                                 Some(caps) => {
-                                    /*let mut col = caps.get(2).unwrap().as_str();
-                                    if col.starts_with('"') && col.ends_with('"') {
-                                        col = rem_first_and_last(col);
-                                    }
+                                    let col = caps.get(2).unwrap().as_str();
                                     cols.push(col);
-                                    let mut val = caps.get(4).unwrap().as_str();
-                                    if val.starts_with('"') && val.ends_with('"') {
-                                        val = rem_first_and_last(val);
-                                    }
-                                    vals.push(val);*/
+                                    let val = caps.get(4).unwrap().as_str();
+                                    vals.push(val);
                                 }
                                 _ => {}
                             };
@@ -129,6 +122,7 @@ impl Database {
                                 cols.join(", "),
                                 vals.join(", ")
                             );
+                            println!("Inserting query: {}", query);
                             self.conn
                                 .execute(query.as_str(), ())
                                 .expect("failed insert query");
@@ -220,8 +214,8 @@ fn main() -> Result<()> {
 
     let me = Person {
         id: 2,
-        name: "?????".to_string(),
-        data: None,
+        name: "Marple".to_string(),
+        data: 32,
     };
     db.conn.execute(
         "INSERT INTO person (name, data) VALUES (?1, ?2)",
