@@ -162,11 +162,11 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
   <tr>
     <td>Report Related Routes Implementation</td>
-    <td></td>
+    <td>Sarah Tang</td>
     <td></td>
   </tr>
   <tr>
-    <td colspan="3"><b>TUI Client Development</b>></td>
+    <td colspan="3"><b>TUI Client Development</b></td>
   </tr>
   <tr>
     <td>Ratatui Framework Setup and Modularization</td>
@@ -180,17 +180,12 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
   <tr>
     <td>Account Summary Page</td>
-    <td></td>
+    <td>Ellen Pan</td>
     <td></td>
   </tr>
   <tr>
     <td>Add/Delete/Update Account Actions</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Account Summary Page</td>
-    <td></td>
+    <td>Ellen Pan</td>
     <td></td>
   </tr>
   <tr>
@@ -205,12 +200,12 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
   <tr>
     <td>Add/Delete/Update Transaction Actions</td>
-    <td></td>
+    <td>Ke Li</td>
     <td></td>
   </tr>
   <tr>
     <td>Report Page</td>
-    <td></td>
+    <td>Sarah Tang</td>
     <td></td>
   </tr>
   <tr>
