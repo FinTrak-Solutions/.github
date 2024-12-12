@@ -67,7 +67,7 @@ The tool supports users to log their transactions and categorize them. More spec
 * The user can modify a logged transaction’s amount, involved accounts, categories, and notes if applicable.
 For each logged transaction, the tool would provide a transaction_id to the user.
 
-### Analysis and Reporting
+## Analysis and Reporting
 TBD
 
 # User Guide
@@ -89,11 +89,40 @@ TBD
 ## Perequisites
 In order to use our financial tracker, we assume the following libraries are available in the environment:
 1. PostgresSQL 17 (Downloading and installation available at [here](https://www.postgresql.org/download/))
-2. Diesel CLI tool (Downloading and installation guide available at [here](https://diesel.rs/guides/getting-started))
-3. TBD
+
+During the setup, please do not change the username and keep the main password you set.
+The rest of this guide assumes default database username `postgres` with password `123456`.
+
+2. Create a database with Postgres for our financial tracker.
+
+    1. Use `psql -U postgres` to enter PostgresSQL Prompt.
+    2. Within the prompt, run the following command: `CREATE DATABASE financial_tracker_db;`
+    3. Verify the new database is successfully created by `\l` in the PostgresSQL Prompt
+    4. Quit the PostgresSQL Prompt with `\q`
+
+3. Diesel CLI tool (Downloading and installation guide available at [here](https://diesel.rs/guides/getting-started))
+
+For MacOS users:
+```
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/diesel-rs/diesel/releases/latest/download/diesel_cli-installer.sh | sh
+```
+For Windows users:
+```
+powershell -c "irm https://github.com/diesel-rs/diesel/releases/latest/download/diesel_cli-installer.ps1 | iex"
+```
 
 ## Setting up Backend Server
-TBD
+1. Sync our backend repository at: https://github.com/FinTrak-Solutions/Backend.git
+2. Inside Backend/backend, create a file named `.env`, with the following:
+```
+DATABASE_URL=postgres://postgres:123456@localhost/financial_tracker_db
+```
+3. Modify the `Backend/backend/disel.toml`: please replace the `dir` in migrations_directory on line 8 with you own local git repository.
+4. Inside Backedn/backend, run `diesel imgration run`. You should see the migrations within backend/backend/migrations run in sequence.
+5. Inside Backend/backend, run `cargo clean`. (Note: this step is necessary for this known [issue](https://stackoverflow.com/questions/70313347/ld-library-not-found-for-lpq-when-build-rust-in-macos) with Diesel)
+6. Inside Backend/backend, run `cargo run`.
+
+Your local fintrak server should be ready and running!
 
 ## Setting up the TUI Client
 TBD
@@ -228,8 +257,8 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
   <tr>
     <td>Reproducibility Guide</td>
-    <td></td>
     <td>Sarah Tang</td>
+    <td>Ke Li, Ellen Pan</td>
   </tr>
   <tr>
     <td>Lessons Learned and Conclusion</td>
