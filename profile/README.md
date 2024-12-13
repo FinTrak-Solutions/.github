@@ -68,7 +68,9 @@ The tool supports users to log their transactions and categorize them. More spec
 For each logged transaction, the tool would provide a transaction_id to the user.
 
 ## Analysis and Reporting
-TBD
+The tool provides an overview for accounts and categories and a detailed budget checking view that is category centric. Specifically:
+* The user can view the account and category balance from homepage.
+* The user can view the budget status for a category and the transactions associated with that budget calculation in a detailed view.
 
 # User Guide
 To help users better navitage through our tool, we would introduce how to explore our tools in this section.
@@ -125,9 +127,11 @@ DATABASE_URL=postgres://postgres:123456@localhost/financial_tracker_db
 Your local fintrak server should be ready and running!
 
 ## Setting up the TUI Client
-TBD
+1. Sync our frontend repository at: https://github.com/FinTrak-Solutions/TUI.git
+2. Inside TUI/frontend, run `cargo clean`.
+3. Inside TUI/frontend, run `cargo run`.
 
-## ALL SET! :ship:
+## YOU ARE NOW ALL SET! :ship:
 
 # Individual Contribution
 We divided our work into four different categories: database setup, TUI client developement, backend server developement, and final report. Note that final report is not the only documentation we maintain, rather the backend API and frontend user guides were updated accordingly as we developed our project.
@@ -149,7 +153,7 @@ We divided our work into four different categories: database setup, TUI client d
   <tr>
     <td>Create Diesel Tables and Migrations</td>
     <td>Ke Li</td>
-    <td>Sarah Tang, Ellen Pan</td>
+    <td>Sarah Tang</td>
   </tr>
   <tr>
     <td>Connect Database in Rocket Backend</td>
@@ -190,7 +194,7 @@ We divided our work into four different categories: database setup, TUI client d
     <td>/</td>
   </tr>
   <tr>
-    <td>Report Related Routes Implementation</td>
+    <td>Report Overview/Detailed View Routes Implementation</td>
     <td>Sarah Tang</td>
     <td></td>
   </tr>
@@ -202,10 +206,15 @@ We divided our work into four different categories: database setup, TUI client d
     <td>Ke Li</td>
     <td>Ellen Pan</td>
   </tr>
+ <tr>
+    <td>Routing and control flow among modules</td>
+    <td>Ke Li</td>
+    <td>/</td>
+  </tr>
   <tr>
     <td>Authentication</td>
     <td>Ke Li</td>
-    <td></td>
+    <td>Ellen Pan</td>
   </tr>
   <tr>
     <td>Account Summary Page</td>
@@ -233,12 +242,12 @@ We divided our work into four different categories: database setup, TUI client d
     <td></td>
   </tr>
   <tr>
-    <td>Report Page</td>
+    <td>Report Overview/Detailed View Page</td>
     <td>Sarah Tang</td>
     <td></td>
   </tr>
   <tr>
-    <td colspan="3">Final Report</td>
+    <td colspan="3"><b>Final Report</b></td>
   </tr>
   <tr>
     <td>Motivations and Objectives</td>
@@ -263,7 +272,7 @@ We divided our work into four different categories: database setup, TUI client d
   <tr>
     <td>Lessons Learned and Conclusion</td>
     <td>Sarah Tang</td>
-    <td></td>
+    <td>/</td>
   </tr>
 </tbody></table>
 
