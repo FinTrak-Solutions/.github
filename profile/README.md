@@ -153,10 +153,10 @@ The homepage serves as the navigation hub and an overview. It provides 4 entry p
 The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
 
 ## Account Management Tab
-The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types through an intuitive interface.
+The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types(debit/credit) through an intuitive interface.
 
 ## Category and Budget Management Tab
-The tool provides a dedicated workflow for managing categories and the corresponding budgets. As the demo shows, the user would be able to add/delete categories of different types and setting budgets for different categories.
+The tool provides a dedicated workflow for managing categories and the corresponding budgets. As the demo shows, the user would be able to add/delete/update different categories for expense and setting budgets for different categories.
 
 ## Report Tab
 The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
