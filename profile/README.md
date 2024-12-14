@@ -75,8 +75,27 @@ The tool provides an overview for accounts and categories and a detailed budget 
 # User Guide
 To help users better navitage through our tool, we would introduce how to explore our tools in this section.
 
-## Authentication Tab
-TBD
+## Authentication
+The authentication tab provides login and signup functions.
+### Signup
+1. The user could fill in Username, Email, Password, and Confirm Password.
+2. Press **Tab** to navigate between input fields.
+3. Press **Enter** to submit the form.
+4. If passwords don't match, an error message appears.
+### Login
+Similar to signup page:
+1. The user fills in Email and Password.
+2. Press **Tab** to navigate between input fields.
+3. Press **Enter** to submit the form.
+4. If email/password is incorrect, an error message appears.
+
+## Homepage
+The homepage serves as the navigation hub and an overview. It provides 4 entry points to different user flows:
+* Account Management
+* Category Management
+* Report Reviews
+* Add New Transactions
+The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
 
 ## Account Management Tab
 TBD
@@ -85,7 +104,9 @@ TBD
 TBD
 
 ## Report Tab
-TBD
+The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
+
+For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
 
 # Reproducibility Guide
 ## Perequisites
@@ -247,7 +268,12 @@ We divided our work into four different categories: database setup, TUI client d
     <td></td>
   </tr>
   <tr>
-    <td colspan="3"><b>Final Report</b></td>
+    <td colspan="3"><b>Final Report and Demo</b></td>
+  </tr>
+ <tr>
+    <td>Demo Setup and Recording</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>Motivations and Objectives</td>
