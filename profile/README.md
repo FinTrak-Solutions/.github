@@ -72,42 +72,6 @@ The tool provides an overview for accounts and categories and a detailed budget 
 * The user can view the account and category balance from homepage.
 * The user can view the budget status for a category and the transactions associated with that budget calculation in a detailed view.
 
-# User Guide
-To help users better navitage through our tool, we would introduce how to explore our tools in this section.
-
-## Authentication
-The authentication tab provides login and signup functions.
-### Signup
-1. The user could fill in Username, Email, Password, and Confirm Password.
-2. Press **Tab** to navigate between input fields.
-3. Press **Enter** to submit the form.
-4. If passwords don't match, an error message appears.
-### Login
-Similar to signup page:
-1. The user fills in Email and Password.
-2. Press **Tab** to navigate between input fields.
-3. Press **Enter** to submit the form.
-4. If email/password is incorrect, an error message appears.
-
-## Homepage
-The homepage serves as the navigation hub and an overview. It provides 4 entry points to different user flows:
-* Account Management
-* Category Management
-* Report Reviews
-* Add New Transactions
-The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
-
-## Account Management Tab
-TBD
-
-## Category and Budget Management Tab
-TBD
-
-## Report Tab
-The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
-
-For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
-
 # Reproducibility Guide
 ## Perequisites
 In order to use our financial tracker, we assume the following libraries are available in the environment:
@@ -153,7 +117,47 @@ Your local fintrak server should be ready and running!
 3. Inside TUI/frontend, run `cargo run`.
 
 ## YOU ARE NOW ALL SET! :ship:
+## If you are interested...
+Below are pointers to some detailed development guides that our team used to keep in sync and collaborate during the project development. Feel free to check them out!
+* Backend development guide: https://fintrak-solutions.github.io/Backend/
+* Detailed documentation of server backend APIs: https://fintrak-solutions.github.io/Backend/#api
+* Frontend development and design guide: https://fintrak-solutions.github.io/Backend/frontend/
 
+# User Guide
+To help users better navitage through our tool, we would introduce how to explore our tools in this section.
+
+## Authentication
+The authentication tab provides login and signup functions.
+### Signup
+1. The user could fill in Username, Email, Password, and Confirm Password.
+2. Press **Tab** to navigate between input fields.
+3. Press **Enter** to submit the form.
+4. If passwords don't match, an error message appears.
+### Login
+Similar to signup page:
+1. The user fills in Email and Password.
+2. Press **Tab** to navigate between input fields.
+3. Press **Enter** to submit the form.
+4. If email/password is incorrect, an error message appears.
+
+## Homepage
+The homepage serves as the navigation hub and an overview. It provides 4 entry points to different user flows:
+* Account Management
+* Category Management
+* Report Reviews
+* Add New Transactions
+The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
+
+## Account Management Tab
+TBD
+
+## Category and Budget Management Tab
+TBD
+
+## Report Tab
+The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
+
+For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
 # Individual Contribution
 We divided our work into four different categories: database setup, TUI client developement, backend server developement, and final report. Note that final report is not the only documentation we maintain, rather the backend API and frontend user guides were updated accordingly as we developed our project.
 <table><thead>
@@ -258,9 +262,14 @@ We divided our work into four different categories: database setup, TUI client d
     <td></td>
   </tr>
   <tr>
-    <td>Add/Delete/Update Transaction Actions</td>
+    <td>Add Transaction Actions</td>
     <td>Ke Li</td>
-    <td></td>
+    <td>/</td>
+  </tr>
+   <tr>
+    <td>Delete Transaction Actions</td>
+    <td>Sarah Tang</td>
+    <td>/</td>
   </tr>
   <tr>
     <td>Report Overview/Detailed View Page</td>
@@ -272,8 +281,8 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
  <tr>
     <td>Demo Setup and Recording</td>
-    <td></td>
-    <td></td>
+    <td>Ellen Pan</td>
+    <td>Sarah Tang, Ke Li</td>
   </tr>
   <tr>
     <td>Motivations and Objectives</td>
@@ -287,8 +296,8 @@ We divided our work into four different categories: database setup, TUI client d
   </tr>
   <tr>
     <td>User Guide</td>
-    <td></td>
     <td>Sarah Tang</td>
+    <td>Ellen Pan</td>
   </tr>
   <tr>
     <td>Reproducibility Guide</td>
