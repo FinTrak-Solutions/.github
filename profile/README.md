@@ -33,9 +33,9 @@ Based on our aim, we have two key objectives in this project:
 
 Users can access easy-to-use text user interface to set spending limits in categories like housing, utilities, and entertainment, as well as income expectations, such as salary or bonuses. By allowing budgets to be managed daily, weekly, monthly, or yearly, the tool lets users adjust tracking to fit their personal needs. With real-time updates on spending, users can continuously monitor their progress and stay aligned with their financial goals.
 
-**:ledger:Comprehensive Financial Reports:ledger:**
+**:ledger:Detailed Financial Reports:ledger:**
 
-Users can access customizable reports that provide clear insights into their spending and saving habits. These reports are available in different views—such as account-based, income-focused, or expense-oriented—and can be adjusted by time frame, ranging from daily to yearly. Additionally, the tool offers budget status summaries (below target, on target, or exceeded) to show users how well they’re meeting their financial goals.
+Users can access detailed reports that provide clear insights into their spending and saving habits. These reports are available in a category centric way with classified transactions. Additionally, the tool offers budget status summaries (below target, on target, or exceeded) to show users how well they’re meeting their financial goals.
 
 # Features
 In this section, we would explain the details about the features of our personal finance tracker to support the above objectives.
@@ -153,10 +153,10 @@ The homepage serves as the navigation hub and an overview. It provides 4 entry p
 The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
 
 ## Account Management Tab
-TBD
+The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types through an intuitive interface.
 
 ## Category and Budget Management Tab
-TBD
+The tool provides a dedicated workflow for managing categories and the corresponding budgets. As the demo shows, the user would be able to add/delete categories of different types and setting budgets for different categories.
 
 ## Report Tab
 The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
@@ -230,7 +230,7 @@ We divided our work into four different categories: database setup, TUI client d
   <tr>
     <td>Report Overview/Detailed View Routes Implementation</td>
     <td>Sarah Tang</td>
-    <td></td>
+    <td>/</td>
   </tr>
   <tr>
     <td colspan="3"><b>TUI Client Development</b></td>
@@ -253,22 +253,22 @@ We divided our work into four different categories: database setup, TUI client d
   <tr>
     <td>Account Summary Page</td>
     <td>Ellen Pan</td>
-    <td></td>
+    <td>/</td>
   </tr>
   <tr>
-    <td>Add/Delete/Update Account Actions</td>
+    <td>Add/Delete Account Actions</td>
     <td>Ellen Pan</td>
-    <td></td>
+    <td>/</td>
   </tr>
   <tr>
-    <td>Add/Delete/Update Category Actions</td>
-    <td></td>
-    <td></td>
+    <td>Add/Delete Category Actions</td>
+    <td>Ellen Pan</td>
+    <td>/</td>
   </tr>
   <tr>
     <td>Category Summary Page</td>
-    <td></td>
-    <td></td>
+    <td>Ellen Pan</td>
+    <td>/</td>
   </tr>
   <tr>
     <td>Add Transaction Actions</td>
@@ -283,7 +283,7 @@ We divided our work into four different categories: database setup, TUI client d
   <tr>
     <td>Report Overview/Detailed View Page</td>
     <td>Sarah Tang</td>
-    <td></td>
+    <td>/</td>
   </tr>
   <tr>
     <td colspan="3"><b>Final Report and Demo</b></td>
