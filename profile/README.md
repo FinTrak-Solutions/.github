@@ -6,15 +6,20 @@
   \/_/    \/_/\/_/ \/_/  \/_/  \/_/ /_/\/_/\/_/\/_____/\/_/\/_/
 ```
 
-### Welcome to FinTrak Solutions 👋
+### Welcome to FinTrack Solutions 👋
 > Rust native TUI financial tracker with persistent storage and reporting functions.
 
 # Our Crew
 | Name    | Student Number | Email |
 | -------- | ------- | ------- |
-| Ke Li  | 1005842554 | |
+| Ke Li  | 1005842554 | damian.li@mail.utoronto.ca |
 | Sarah Tang | 1002397079 | jinzhuo.tang@mail.utoronto.ca |
 | Ellen Pan  | 1002159353 | yunru.pan@mail.utoronto.ca |
+
+# Check out our DEMOOOO!
+FinTrack tool demo video link: <TBD>
+
+In this demo, we highlight the following workflow:
 
 # Motivation
 In today’s fast-paced world, financial management is crucial for individuals seeking to maintain control over their income and expenses. Although there are various finance related apis and accounting tools available in existing Rust crates, there lacks a centralized tool for users to organize the information, track their spending habits, as well as analyzing their personal expenses. To address this gap, we proposed developing a robust, user-friendly personal finance tracker FIRE using Rust, tailored for users looking for a simplified yet powerful tool to handle their financial management effectively.
@@ -58,7 +63,6 @@ Specifically, when it comes to budgets, the users are able to:
 * Set numerical limits for expense categories.
 * Set numerical expectations for income categories.
 * Set frequency for budgets: daily/weekly/monthly/yearly.
-* Modify previously set budgets.
 
 ## Transaction Management
 The tool supports users to log their transactions and categorize them. More specifically:
@@ -109,7 +113,7 @@ DATABASE_URL=postgres://postgres:123456@localhost/financial_tracker_db
 5. Inside Backend/backend, run `cargo clean`. (Note: this step is necessary for this known [issue](https://stackoverflow.com/questions/70313347/ld-library-not-found-for-lpq-when-build-rust-in-macos) with Diesel)
 6. Inside Backend/backend, run `cargo run`.
 
-Your local fintrak server should be ready and running!
+Your local fintrack server should be ready and running!
 
 ## Setting up the TUI Client
 1. Sync our frontend repository at: https://github.com/FinTrak-Solutions/TUI.git
@@ -118,7 +122,7 @@ Your local fintrak server should be ready and running!
 
 ## YOU ARE NOW ALL SET! :ship:
 ## If you are interested...
-Below are pointers to some detailed development guides that our team used to keep in sync and collaborate during the project development. Feel free to check them out!
+Below are pointers to some detailed development guides that our team used to keep in sync and collaborate during the project development. We tried our best to keep them updated throughout the project progress, but some sections might be slightly lagged. Feel free to check them out!
 * Backend development guide: https://fintrak-solutions.github.io/Backend/
 * Detailed documentation of server backend APIs: https://fintrak-solutions.github.io/Backend/#api
 * Frontend development and design guide: https://fintrak-solutions.github.io/Backend/frontend/
@@ -158,6 +162,11 @@ TBD
 The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
 
 For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
+
+Should the user want to delete a transaction after checking its details, this is the place. The user could pin the transaction they want to delete by the tab key and up/down arrow key. The deletion would be effective immediately and the report tab is refreshed in real-time.
+
+Note: because of the time constraint in this project, we did not have the time to implement update transaction feature yet. The temporary workaround would be to delete the old transaction and add a new transaction with the adjustments. We acknowledge the inconvenience in this flow, and it is in our backlog to finish this feature.
+
 # Individual Contribution
 We divided our work into four different categories: database setup, TUI client developement, backend server developement, and final report. Note that final report is not the only documentation we maintain, rather the backend API and frontend user guides were updated accordingly as we developed our project.
 <table><thead>
