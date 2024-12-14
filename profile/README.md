@@ -1,8 +1,8 @@
 ```text
- ______  __  __   __  ______  ______  ______  ______  __  __    
-/\  ___\/\ \/\ "-.\ \/\__  _\/\  == \/\  __ \/\  ___\/\ \/ /    
-\ \  __\\ \ \ \ \-.  \/_/\ \/\ \  __<\ \  __ \ \ \___\ \  _"-.  
- \ \_\   \ \_\ \_\\"\_\ \ \_\ \ \_\ \_\ \_\ \_\ \_____\ \_\ \_\ 
+ ______  __  __   __  ______  ______  ______  ______  __  __
+/\  ___\/\ \/\ "-.\ \/\__  _\/\  == \/\  __ \/\  ___\/\ \/ /
+\ \  __\\ \ \ \ \-.  \/_/\ \/\ \  __<\ \  __ \ \ \___\ \  _"-.
+ \ \_\   \ \_\ \_\\"\_\ \ \_\ \ \_\ \_\ \_\ \_\ \_____\ \_\ \_\
   \/_/    \/_/\/_/ \/_/  \/_/  \/_/ /_/\/_/\/_/\/_____/\/_/\/_/
 ```
 
@@ -14,7 +14,7 @@
 | -------- | ------- | ------- |
 | Ke Li  | 1005842554 | |
 | Sarah Tang | 1002397079 | jinzhuo.tang@mail.utoronto.ca |
-| Ellen Pan  | 1002159353 | |
+| Ellen Pan  | 1002159353 | yunru.pan@mail.utoronto.ca |
 
 # Motivation
 In today’s fast-paced world, financial management is crucial for individuals seeking to maintain control over their income and expenses. Although there are various finance related apis and accounting tools available in existing Rust crates, there lacks a centralized tool for users to organize the information, track their spending habits, as well as analyzing their personal expenses. To address this gap, we proposed developing a robust, user-friendly personal finance tracker FIRE using Rust, tailored for users looking for a simplified yet powerful tool to handle their financial management effectively.
@@ -33,7 +33,7 @@ Users can access easy-to-use text user interface to set spending limits in categ
 Users can access customizable reports that provide clear insights into their spending and saving habits. These reports are available in different views—such as account-based, income-focused, or expense-oriented—and can be adjusted by time frame, ranging from daily to yearly. Additionally, the tool offers budget status summaries (below target, on target, or exceeded) to show users how well they’re meeting their financial goals.
 
 # Features
-In this section, we would explain the details about the features of our personal finance tracker to support the above objectives. 
+In this section, we would explain the details about the features of our personal finance tracker to support the above objectives.
 
 ## User Authentication
 The tool supports user authentication for access control and account interactions. Specifically:
@@ -43,12 +43,12 @@ The tool supports user authentication for access control and account interaction
 
 ## Account Management
 There are two types of functionalities relevant to account management:
-* The tool allows users to add, delete, and rename different accounts. 
+* The tool allows users to add, delete, and rename different accounts.
    * The account names should be unique for the same user. The tool would provide error messages in case of a collision in names when adding or renaming accounts.
 * The tool supports multiple types of accounts for each user. The types are defined in two levels:
   1. On the basic level, the accounts are divided into debit and credit accounts.
   2. On the finer-grind level, the user could customize the account names based on their own needs.
- 
+
 ## Budget Management
 The tool allows users to set and manage budgets through **categories**. We allow categories to be managed by users, which means the users could:
 * Create/delete/update categories of different types, names, and budgets.
@@ -307,11 +307,11 @@ It was both a great learning experience as well as a fun journey for us to devel
 
 Before we close this report and bid you farewell, we would like to add a few lessons learned in our project, and hopefully they would be beneficial to any future readers:
 
-**Establish Clear Milestones** 
+**Establish Clear Milestones**
 One of the feedbacks that we received for our proposals was the lack of details in work distribution. We had since restructured our milestones to be more detailed, broken down the bigger goals into smaller components, and assigned clear team members to work on the items. Clear milestones helped us track and measure our progress, estimate the remaining wordload, and adjust our schedules accordingly.
 
 **Regular Status Sync Meetings**
 We held status sync meetings regularly throughout the term, with the frequencies adjusted based on due dates. These meetings help us keep our project on track, as discussion and collaboration is unavoidable for a project like this. For example, we have status sync meetings to review and settle the database schemas, to confirm environment setups, and to go over the development status and action items required for either frontend or backend. These meetings help us align our understandings and our role in implementing the features we wanted.
 
 **Keep Documentations Up-to-Date**
-It is challenging to work on a coding project in parallel, while different parts our system depend on each other (e.g. frontend needs to communicate with the backend somehow, and the request and response formats need to be in-sync to perform any useful testing and verification on the functionalities). Since we could not have status sync meetings every day, we found it very beneficial to keep documentations on both TUI end and Rocket server end with each incremental commits. The documented APIs facilitated the flexible communication among team members while catching any out-of-sync behaviours in a timely manner. 
+It is challenging to work on a coding project in parallel, while different parts our system depend on each other (e.g. frontend needs to communicate with the backend somehow, and the request and response formats need to be in-sync to perform any useful testing and verification on the functionalities). Since we could not have status sync meetings every day, we found it very beneficial to keep documentations on both TUI end and Rocket server end with each incremental commits. The documented APIs facilitated the flexible communication among team members while catching any out-of-sync behaviours in a timely manner.
