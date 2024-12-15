@@ -19,7 +19,7 @@
 # Video Demo
 FinTrack tool demo video link: <TBD>
 
-The transcription of our video demo (presented Ellen!) could be found [here](https://github.com/FinTrak-Solutions/.github/blob/main/profile/DEMO.md).
+The transcription of our video demo (presented by Ellen!) can be found [here](https://github.com/FinTrak-Solutions/.github/blob/main/profile/DEMO.md).
 
 # Motivation
 In today’s fast-paced world, financial management is crucial for individuals seeking to maintain control over their income and expenses. Although there are various finance related apis and accounting tools available in existing Rust crates, there lacks a centralized tool for users to organize the information, track their spending habits, as well as analyzing their personal expenses. To address this gap, we proposed developing a robust, user-friendly personal finance tracker FIRE using Rust, tailored for users looking for a simplified yet powerful tool to handle their financial management effectively.
@@ -31,7 +31,7 @@ Based on our aim, we have two key objectives in this project:
 
 **:moneybag:Intuitive Budgeting Tools:moneybag:**
 
-Users can access easy-to-use text user interface to set spending limits in categories like housing, utilities, and entertainment, as well as income expectations, such as salary or bonuses. By allowing budgets to be managed daily, weekly, monthly, or yearly, the tool lets users adjust tracking to fit their personal needs. With real-time updates on spending, users can continuously monitor their progress and stay aligned with their financial goals.
+Users can access easy-to-use text user interfaces to set spending limits in categories like housing, utilities, and entertainment, as well as income expectations, such as salary or bonuses. By allowing budgets to be managed daily, weekly, monthly, or yearly, the tool lets users adjust tracking to fit their personal needs. With real-time updates on spending, users can continuously monitor their progress and stay aligned with their financial goals.
 
 **:ledger:Detailed Financial Reports:ledger:**
 
@@ -72,16 +72,16 @@ For each logged transaction, the tool would provide a transaction_id to the user
 
 ## Analysis and Reporting
 The tool provides an overview for accounts and categories and a detailed budget checking view that is category centric. Specifically:
-* The user can view the account and category balance from homepage.
+* The user can view the account and category balance from the homepage.
 * The user can view the budget status for a category and the transactions associated with that budget calculation in a detailed view.
 
 # Reproducibility Guide
-## Perequisites
+## Prerequisites
 In order to use our financial tracker, we assume the following libraries are available in the environment:
 1. PostgresSQL 17 (Downloading and installation available at [here](https://www.postgresql.org/download/))
 
 During the setup, please do not change the username and keep the main password you set.
-The rest of this guide assumes default database username `postgres` with password `123456`.
+The rest of this guide assumes the default database username `postgres` with password `123456`.
 
 2. Create a database with Postgres for our financial tracker.
 
@@ -107,8 +107,8 @@ powershell -c "irm https://github.com/diesel-rs/diesel/releases/latest/download/
 ```
 DATABASE_URL=postgres://postgres:123456@localhost/financial_tracker_db
 ```
-3. Modify the `Backend/backend/disel.toml`: please replace the `dir` in migrations_directory on line 8 with you own local git repository.
-4. Inside Backedn/backend, run `diesel imgration run`. You should see the migrations within backend/backend/migrations run in sequence.
+3. Modify the `Backend/backend/diesel.toml`: please replace the `dir` in migrations_directory on line 8 with your own local git repository.
+4. Inside Backend/backend, run `diesel migration run`. You should see the migrations within backend/backend/migrations run in sequence.
 5. Inside Backend/backend, run `cargo clean`. (Note: this step is necessary for this known [issue](https://stackoverflow.com/questions/70313347/ld-library-not-found-for-lpq-when-build-rust-in-macos) with Diesel)
 6. Inside Backend/backend, run `cargo run`.
 
@@ -127,7 +127,7 @@ Below are pointers to some detailed development guides that our team used to kee
 * Frontend development and design guide: https://fintrak-solutions.github.io/Backend/frontend/
 
 # User Guide
-To help users better navitage through our tool, we would introduce how to explore our tools in this section.
+To help users better navigate through our tool, we would introduce how to explore our tools in this section.
 
 ## Authentication
 The authentication tab provides login and signup functions.
@@ -141,7 +141,7 @@ Similar to signup page:
 1. The user fills in Email and Password.
 2. Press **Tab** to navigate between input fields.
 3. Press **Enter** to submit the form.
-4. If email/password is incorrect, an error message appears.
+4. If the email/password is incorrect, an error message appears.
 
 ## Homepage
 The homepage serves as the navigation hub and an overview. It provides 4 actions as entry points to different user flows:
@@ -152,7 +152,7 @@ The homepage serves as the navigation hub and an overview. It provides 4 actions
 The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
 
 ## Account Management Tab
-The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types through an intuitive interface. Any updates to the account page is refreshed in real-time.
+The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types through an intuitive interface. Any updates to the account page are refreshed in real-time.
 ### To add a new account:
  1. Hit key 'n'
  2. Enter account name and type (debit/credit)
@@ -177,22 +177,22 @@ The tool provides a dedicated workflow for managing categories and the correspon
 4. Submit changes using 'Enter'
 
 ## Report Tab
-The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
+The report's detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
 
-For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
+For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction are also provided.
 
 ### To delete an transaction:
 Should the user want to **delete a transaction after checking its details, this is the place. To pin the transaction that the user wants to delete:
-1. Use 'tab' key to switch to the category that the transaction is in.
+1. Use the 'tab' key to switch to the category that the transaction is in.
 2. Use '↑↓'(Up/Down key) to select the transaction you want to delete within the category.
 3. Press key 'd' to delete the selected transaction.
 
 The deletion would be effective immediately and the report tab is refreshed in real-time.
 
-Note: because of the time constraint in this project, we did not have the time to implement update transaction feature yet. The temporary workaround would be to delete the old transaction and add a new transaction with the adjustments. We acknowledge the inconvenience in this flow, and it is in our backlog to finish this feature.
+Note: because of the time constraint in this project, we did not have the time to implement the update transaction feature yet. The temporary workaround would be to delete the old transaction and add a new transaction with the adjustments. We acknowledge the inconvenience in this flow, and it is in our backlog to finish this feature.
 
 # Individual Contribution
-We divided our work into four different categories: database setup, TUI client developement, backend server developement, and final report. Note that final report is not the only documentation we maintain, rather the backend API and frontend user guides were updated accordingly as we developed our project.
+We divided our work into four different categories: database setup, TUI client development, backend server development, and final report. Note that the final report is not the only documentation we maintain, rather the backend API and frontend user guides were updated accordingly as we developed our project.
 <table><thead>
   <tr>
     <th>Task</th>
@@ -356,4 +356,6 @@ One of the feedbacks that we received for our proposals was the lack of details 
 We held status sync meetings regularly throughout the term, with the frequencies adjusted based on due dates. These meetings help us keep our project on track, as discussion and collaboration is unavoidable for a project like this. For example, we have status sync meetings to review and settle the database schemas, to confirm environment setups, and to go over the development status and action items required for either frontend or backend. These meetings help us align our understandings and our role in implementing the features we wanted.
 
 **Keep Documentations Up-to-Date**
-It is challenging to work on a coding project in parallel, while different parts our system depend on each other (e.g. frontend needs to communicate with the backend somehow, and the request and response formats need to be in-sync to perform any useful testing and verification on the functionalities). Since we could not have status sync meetings every day, we found it very beneficial to keep documentations on both TUI end and Rocket server end with each incremental commits. The documented APIs facilitated the flexible communication among team members while catching any out-of-sync behaviours in a timely manner.
+It is challenging to work on a coding project in parallel, while different parts our system depend on each other (e.g. frontend needs to communicate with the backend somehow, and the request and response formats need to be in-sync to perform any useful testing and verification on the functionalities). Since we could not have status sync meetings every day, we found it very beneficial to keep documentations on both TUI end and Rocket server end with each incremental commit. The documented APIs facilitated the flexible communication among team members while catching any out-of-sync behaviours in a timely manner.
+
+
