@@ -145,24 +145,49 @@ Similar to signup page:
 
 ## Homepage
 The homepage serves as the navigation hub and an overview. It provides 4 actions as entry points to different user flows:
-* Account Management
-* Category Management
-* Report Reviews
-* Add New Transactions
+* Account Management (Press '1')
+* Category Management (Press '2')
+* Report Reviews (Press '3')
+* Add New Transactions (Press 'n')
 The user could follow instructions at the bottom of the page to navigate through different functions of our financial tracker.
 
 ## Account Management Tab
-The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types(debit/credit) through an intuitive interface.
+The tool provides a dedicated workflow for managing accounts. As the demo shows, the user would be able to add/delete accounts of different types through an intuitive interface. Any updates to the account page is refreshed in real-time.
+### To add a new account:
+ 1. Hit key 'n'
+ 2. Enter account name and type (debit/credit)
+ 3. Submit using 'Enter'
+### To delete an existing account:
+1. Use '↑↓'(Up/Down key) to select the account that you want to delete
+2. Hit key 'd' for deleting
 
 ## Category and Budget Management Tab
 The tool provides a dedicated workflow for managing categories and the corresponding budgets. As the demo shows, the user would be able to add/delete/update different categories for expense and setting budgets for different categories.
+### To add a new category:
+ 1. Hit key 'n'
+ 2. Enter category nickname, type, budget, and the budget frequency (You can use 'tab' to switch between the text entry boxes).
+ 3. Submit using 'Enter'
+### To delete an existing category:
+1. Use '↑↓'(Up/Down key) to select the category that you want to delete
+2. Hit key 'd' for deleting
+### To update an existing category:
+1. Use '↑↓'(Up/Down key) to select the account that you want to update
+2. Hit key 'u' for updating
+3. On the redirect page, enter the desired category details
+4. Submit changes using 'Enter'
 
 ## Report Tab
 The report detailed view could be accessed from the homepage. It focuses on the budgeting status of the user, and is category centric.
 
 For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction is also provided.
 
-Should the user want to delete a transaction after checking its details, this is the place. The user could pin the transaction they want to delete by the tab key and up/down arrow key. The deletion would be effective immediately and the report tab is refreshed in real-time.
+### To delete an transaction:
+Should the user want to **delete a transaction after checking its details, this is the place. To pin the transaction that the user wants to delete:
+1. Use 'tab' key to switch to the category that the transaction is in.
+2. Use '↑↓'(Up/Down key) to select the transaction you want to delete within the category.
+3. Press key 'd' to delete the selected transaction.
+
+The deletion would be effective immediately and the report tab is refreshed in real-time.
 
 Note: because of the time constraint in this project, we did not have the time to implement update transaction feature yet. The temporary workaround would be to delete the old transaction and add a new transaction with the adjustments. We acknowledge the inconvenience in this flow, and it is in our backlog to finish this feature.
 
