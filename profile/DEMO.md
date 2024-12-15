@@ -7,8 +7,8 @@
 "First, let's register as a new user. On our cover page, we see our FinTrack logo and two options. I'll press '1' to access the signup page.
 
 For registration, I'll enter:
-- Username: 'Rust FinTrack'
-- Email: 'rust@example.com'
+- Username: 'FinTrack'
+- Email: 'fintrack@example.com'
 - Password: 'demo123'
 - And confirm the password
 
