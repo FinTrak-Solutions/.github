@@ -16,10 +16,10 @@
 | Sarah Tang | 1002397079 | jinzhuo.tang@mail.utoronto.ca |
 | Ellen Pan  | 1002159353 | yunru.pan@mail.utoronto.ca |
 
-# Check out our DEMOOOO!
+# Video Demo
 FinTrack tool demo video link: <TBD>
 
-In this demo, we highlight the following workflow:
+The transcription of our video demo (presented Ellen!) could be found [here](https://github.com/FinTrak-Solutions/.github/blob/main/profile/DEMO.md).
 
 # Motivation
 In today’s fast-paced world, financial management is crucial for individuals seeking to maintain control over their income and expenses. Although there are various finance related apis and accounting tools available in existing Rust crates, there lacks a centralized tool for users to organize the information, track their spending habits, as well as analyzing their personal expenses. To address this gap, we proposed developing a robust, user-friendly personal finance tracker FIRE using Rust, tailored for users looking for a simplified yet powerful tool to handle their financial management effectively.
@@ -38,7 +38,7 @@ Users can access easy-to-use text user interface to set spending limits in categ
 Users can access detailed reports that provide clear insights into their spending and saving habits. These reports are available in a category centric way with classified transactions. Additionally, the tool offers budget status summaries (below target, on target, or exceeded) to show users how well they’re meeting their financial goals.
 
 # Features
-In this section, we would explain the details about the features of our personal finance tracker to support the above objectives.
+In this section, we would explain the details about the features of our personal finance tracker to support the above objectives. Regarding how each feature can be achieved in the app, please check our demo [video](#Video-Demo) and our user [guide](#User-Guide).
 
 ## User Authentication
 The tool supports user authentication for access control and account interactions. Specifically:
@@ -60,15 +60,14 @@ The tool allows users to set and manage budgets through **categories**. We allow
 * Get transactions in different categories.
 
 Specifically, when it comes to budgets, the users are able to:
-* Set numerical limits for expense categories.
-* Set numerical expectations for income categories.
+* Set budget limits for expense categories.
 * Set frequency for budgets: daily/weekly/monthly/yearly.
 
 ## Transaction Management
 The tool supports users to log their transactions and categorize them. More specifically:
 * The user can classify a transaction with a category
 * Optionally, the user can specify notes with each transaction.
-* The user can modify a logged transaction’s amount, involved accounts, categories, and notes if applicable.
+* The user can select and delete a transaction
 For each logged transaction, the tool would provide a transaction_id to the user.
 
 ## Analysis and Reporting
@@ -145,7 +144,7 @@ Similar to signup page:
 4. If email/password is incorrect, an error message appears.
 
 ## Homepage
-The homepage serves as the navigation hub and an overview. It provides 4 entry points to different user flows:
+The homepage serves as the navigation hub and an overview. It provides 4 actions as entry points to different user flows:
 * Account Management
 * Category Management
 * Report Reviews
@@ -321,7 +320,7 @@ We divided our work into four different categories: database setup, TUI client d
 </tbody></table>
 
 # Lessons Learned and Conclusion
-It was both a great learning experience as well as a fun journey for us to develop this Rust based financial tracker. We built our knowledge in the Rust full stack world: from the Rocket backend server to the Ratatui frontend client, from Diesel interface of database to how to keep track of our documentation while working in paralle. We hope you enjoy fiddling with our financial tracker, and it would help you manage your financial situation in a clear and friendly way.
+It was both a great learning experience as well as a fun journey for us to develop this Rust based financial tracker. We built our knowledge in the Rust full stack world: from the Rocket backend server to the Ratatui frontend client, from Diesel interface of database to how to keep track of our documentation while working in parallel. We hope you enjoy fiddling with our financial tracker, and it would help you manage your financial situation in a clear and friendly way.
 
 Before we close this report and bid you farewell, we would like to add a few lessons learned in our project, and hopefully they would be beneficial to any future readers:
 
