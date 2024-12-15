@@ -144,7 +144,9 @@ Similar to signup page:
 4. If the email/password is incorrect, an error message appears.
 
 ## Homepage
-The homepage serves as the navigation hub and an overview. It provides 4 actions as entry points to different user flows:
+The homepage serves as the navigation hub and an overview, as shown in the screenshot below:
+![Fintrack Homepage: 3 panels for display, 4 actions for users to try.](./fintrack_homepage.png)
+It provides 4 actions as entry points to different user flows:
 * Account Management (Press '1')
 * Category Management (Press '2')
 * Report Reviews (Press '3')
@@ -182,7 +184,7 @@ The report's detailed view could be accessed from the homepage. It focuses on th
 For each category, a preliminary budget analysis on the spending based on user specified frequency is done and the report is color-coded accordingly for better visual experience. The transactions are grouped by categories and ordered by time. Notes of each transaction are also provided.
 
 ### To delete an transaction:
-Should the user want to **delete a transaction after checking its details, this is the place. To pin the transaction that the user wants to delete:
+Should the user want to **delete** a transaction after checking its details, this is the place. To pin the transaction that the user wants to delete:
 ![In this screenshot, the transaction to be deleted would be the transaction ID#5](./fintrack_report.png)
 
 1. Use the 'tab' key to switch to the category that the transaction is in. The selected category block would be highlighted in yellow, as shown in category 'food' in the screenshot.
