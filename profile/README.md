@@ -183,8 +183,10 @@ For each category, a preliminary budget analysis on the spending based on user s
 
 ### To delete an transaction:
 Should the user want to **delete a transaction after checking its details, this is the place. To pin the transaction that the user wants to delete:
-1. Use the 'tab' key to switch to the category that the transaction is in.
-2. Use '↑↓'(Up/Down key) to select the transaction you want to delete within the category.
+![In this screenshot, the transaction to be deleted would be the transaction ID#5](./fintrack_report.png)
+
+1. Use the 'tab' key to switch to the category that the transaction is in. The selected category block would be highlighted in yellow, as shown in category 'food' in the screenshot.
+2. Use '↑↓'(Up/Down key) to select the transaction you want to delete within the category. The selected transaction entry would be highlighted in yellow, as shown in transaction #5 the screenshot.
 3. Press key 'd' to delete the selected transaction.
 
 The deletion would be effective immediately and the report tab is refreshed in real-time.
