@@ -17,7 +17,7 @@
 | Ellen Pan  | 1002159353 | yunru.pan@mail.utoronto.ca |
 
 # Video Demo
-FinTrack tool demo video link: <TBD>
+FinTrack tool demo video link: https://www.youtube.com/watch?v=Dz61beM5KfY
 
 The transcription of our video demo (presented by Ellen!) can be found [here](https://github.com/FinTrak-Solutions/.github/blob/main/profile/DEMO.md).
 

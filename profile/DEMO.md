@@ -34,48 +34,80 @@ Notice how our accounts appear in the list with clear labels. We can navigate be
 
 Let's create three categories:
 1. First category:
-   - Name: 'Groceries'
+   - Name: 'groceries'
    - Type: 'expense'
    - Budget: '500'
    - Frequency: 'monthly'
 
 2. Second category:
-   - Name: 'Restaurants'
+   - Name: 'restaurants'
    - Type: 'expense'
    - Budget: '200'
    - Frequency: 'monthly'
 
 3. Third category:
-   - Name: 'Salary'
+   - Name: 'salary'
    - Type: 'income'
    - Budget: '4000'
    - Frequency: 'monthly'
 
-Each category shows its budget status and can be easily managed using the same navigation controls."
+Let me demonstrate how to modify categories. I'll update the restaurants budget:
+- Press 'u' to update
+- Change budget to '250'
+- Change frequency to 'monthly'
 
-## Transaction Management (30 seconds)
+And now I'll delete a test category:
+- Create a test category named 'To Delete'
+- Use arrow keys to select it
+- Press 'd' to delete it
+- Notice the immediate update in our category list"
+
+## Transaction Management (45 seconds)
 "Let's add some transactions. From the homepage, I'll press 'n' to create a new transaction.
-
 First transaction:
-- Category: 'Groceries'
-- Amount: '75.50'
-- Account: 'TD Visa'
-- Notes: 'Weekly grocery shopping'
+
+Category: 'Groceries'
+Amount: '75.50'
+Account: 'TD Visa'
+Notes: 'Weekly grocery shopping'
 
 Second transaction:
-- Category: 'Restaurants'
-- Amount: '45.75'
-- Account: 'TD Visa'
-- Notes: 'Lunch with team'"
 
-## Report View (15 seconds)
+Category: 'Restaurants'
+Amount: '45.75'
+Account: 'TD Visa'
+Notes: 'Lunch with team'
+
+Third transaction:
+
+Category: 'Groceries'
+Amount: '32.25'
+Account: 'TD Visa'
+Notes: 'Quick grocery run'
+
+Fourth transaction:
+
+Category: 'Groceries'
+Amount: '150.00'
+Account: 'TD Checking'
+Notes: 'Bulk grocery shopping at Costco'
+
+Notice how we can easily switch between our credit and debit accounts when logging transactions, allowing us to track spending across all our accounts."
+
+## Report View (30 seconds)
 "Finally, let's check our financial report. I'll press '3' from the homepage to access the report view. Here we can see:
 - Our spending categorized by type
 - Color-coded budget status for each category
 - Detailed transaction listings
-- The ability to delete transactions if needed using 'd'
 
-Notice how the interface automatically updates to reflect our recent transactions."
+Let me demonstrate the transaction management features:
+- Use Tab to switch between different categories with yellow
+- Use Up/Down arrows to navigate transactions within a category
+- I'll select the 'Quick grocery run' transaction
+- Press 'd' to delete it
+- Notice how the budget status updates immediately
+
+You can see how easy it is to review and manage your transactions while monitoring your budget status."
 
 ## Closing (10 seconds)
 "And that's FinTrack! A comprehensive yet simple tool for managing your personal finances. Thank you for watching!"
